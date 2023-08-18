@@ -5,5 +5,6 @@ FROM docker.io/library/tomcat
 #COPY my-app.war /usr/local/tomcat/webapps/
 
 # 컨테이너가 실행될 때 실행될 명령을 지정합니다.
-CMD ["run","catalina.sh"]
+CMD ["/bin/sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
+#CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
 #ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh"] 
