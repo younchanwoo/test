@@ -8,7 +8,10 @@ FROM docker.io/library/tomcat
 #CMD ["/usr/bin/bash", "/usr/local/tomcat/bin/catalina.sh", "run"]
 #CMD ["/bin/sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
 #CMD ["sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
-CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+#CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+
+ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "run"]
+
 
 # 잘못된 실행 방식
 #CMD ["/usr/local/tomcat/bin/catalina.sh"]
