@@ -10,7 +10,7 @@ FROM docker.io/library/tomcat
 #CMD ["sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
 #CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
 
-ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "run"]
+#ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "run"]
 ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "start"]
 
 
