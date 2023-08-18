@@ -6,7 +6,5 @@ FROM docker.io/library/tomcat
 
 # 컨테이너가 실행될 때 실행될 명령을 지정합니다.
 #CMD ["/bin/sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
-#CMD ["sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
-CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
-
-#ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh"] 
+CMD ["sh", "/usr/local/tomcat/bin/catalina.sh", "run"]
+#CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
