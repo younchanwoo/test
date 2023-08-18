@@ -11,7 +11,6 @@ FROM docker.io/library/tomcat
 #CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
 
 #ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "run"]
-ENTRYPOINT ["/usr/local/tomcat/bin/catalina.sh", "start"]
 
 
 # 잘못된 실행 방식
